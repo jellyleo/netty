@@ -1,5 +1,5 @@
 # netty
-springboot集成netty实现的即时聊天功能
+springboot集成netty实现的即时聊天功能，demo测试地址：http://118.25.46.151/chat/
 
 ---
 
@@ -10,7 +10,5 @@ springboot集成netty实现的即时聊天功能
 >加入了心跳检测并实现断线重连
 
 ---
-
-demo测试地址：http://118.25.46.151/chat/
 
 参考并感谢@https://github.com/fuzhengwei/itstack-demo-netty
