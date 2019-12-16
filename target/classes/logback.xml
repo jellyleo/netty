@@ -1,0 +1,35 @@
+<configuration>
+	<property name="LOG_HOME" value="/data/logs" />
+
+	<appender name="Console"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{H:mm} %-5level [%logger{16}] %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- <appender name="SysLog" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+		<encoder class="net.logstash.logback.encoder.LogstashEncoder"> </encoder> 
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+		<FileNamePattern> ${LOG_HOME}/novel.%d{yyyy-MM-dd}.log </FileNamePattern> 
+		<MaxHistory>5</MaxHistory> </rollingPolicy> </appender> -->
+
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${LOG_HOME}/jellyleo.%d{yyyy-MM-dd}.log
+			</FileNamePattern>
+			<MaxHistory>5</MaxHistory>
+		</rollingPolicy>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
+			</pattern>
+		</layout>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="FILE" />
+		<appender-ref ref="Console" />
+	</root>
+</configuration>
