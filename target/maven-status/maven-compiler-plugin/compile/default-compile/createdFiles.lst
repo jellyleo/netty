@@ -1,10 +1,10 @@
 com\jellyleo\netty\server\NettyServer.class
 com\jellyleo\netty\NettyStarter.class
 com\jellyleo\netty\controller\NettyController.class
-com\jellyleo\netty\util\ChannelHandler.class
 com\jellyleo\netty\domain\ClientMsgProtocol.class
+com\jellyleo\netty\server\JlServerHandler.class
+com\jellyleo\netty\server\ChannelHandler.class
 com\jellyleo\netty\server\JlChannelInitializer.class
 com\jellyleo\netty\domain\ServerMsgProtocol.class
 com\jellyleo\netty\util\MsgUtil.class
 com\jellyleo\netty\NettyApplication.class
-com\jellyleo\netty\server\JlServerHandler.class
