@@ -1,5 +1,5 @@
 # netty
-springboot集成netty实现的即时聊天功能，demo测试地址：http://118.25.46.151/chat/
+springboot集成netty实现的即时聊天功能，demo测试地址：http://123.207.100.55/chat/
 
 ---
 
